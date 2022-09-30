@@ -2,7 +2,7 @@ pipeline {
     agent any 
 
     environment {
-        ENV_URL = "piepline.google.com"
+        ENV_URL = "pipeline.google.com"
     } 
 
     stages {
