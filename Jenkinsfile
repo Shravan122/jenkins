@@ -38,4 +38,5 @@ pipeline {
 
 // Environment variables for SSH username & password
 //SSH_CRED_USR
-//SSH_CRED_PSW
+//SSH_CRED_PSW 
+//Added some commits
