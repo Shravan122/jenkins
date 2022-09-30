@@ -1,15 +1,21 @@
 pipeline {
-    agent any
+    agent any 
+
+    environment {
+        ENV_URL = "plepline.google.com"
+    } 
+
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-      }  
+        stage('Hai') {
+            steps { 
+                sh "echo ${ENV_URL}"
+             }
+         }  
 
         stage('Hai') {
             steps {
-                echo 'Hai World'
+                sh  "echo hai"
+                sh  "echo Environment  URL is ${ENV_URL} "
             }
         } 
     }   
