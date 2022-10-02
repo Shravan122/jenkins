@@ -1,5 +1,7 @@
 pipeline {
-    agent any 
+     agent { 
+        label 'ANSIBLE' 
+        }
          
     stages {
         stage('Parallel') {
@@ -24,4 +26,9 @@ pipeline {
             }
         }
     } 
+     post {
+        success {
+            cleanWs()
+        }
+    }
 }  
